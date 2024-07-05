@@ -7,6 +7,12 @@ Web Developer Challenge for Qu Beyond
 npm install
 ```
 
+### Copy `.env.example` to `.env` and fill in the values
+
+```sh
+cp .env.example .env
+```
+
 ### Compile and Hot-Reload for Development
 
 ```sh

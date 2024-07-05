@@ -1,0 +1,12 @@
+1. What's a closure? Where in the code is there a closure?
+
+A closure is a function that retains access to its lexical scope even when the function is executed outside that scope. In simpler terms, a closure allows a function to remember and access variables from the outer function's scope even after the outer function has finished executing.
+
+In the provided code, closures can be found in the `JokesView.vue` component, specifically within the `fetchJokes` and `goToPage` functions. These functions capture variables from their outer lexical scope, making them closures.
+
+2. Which are the potential side-effects in any function?
+
+Side-effects occur when a function modifies some state or interacts with the outside world. Potential side-effects in the provided code include:
+
+- **HTTP Requests**: The `fetchJokes` function makes HTTP requests using the `get` function, which interacts with an external API.
+- **State Modifications**: The `fetchJokes` and `goToPage` functions modify state by updating the `jokes`, `totalItems`, and `currentPage` variables.
